@@ -1034,7 +1034,8 @@ func supportedVersionsFromMax(maxVersion uint16) []uint16 {
 	return versions
 }
 
-var defaultCurvePreferences = []CurveID{X25519, CurveP256, CurveP384, CurveP521}
+// 改变后两个顺序
+var defaultCurvePreferences = []CurveID{X25519, CurveP256, CurveP521, CurveP384}
 
 func (c *Config) curvePreferences() []CurveID {
 	if needFIPS() {
