@@ -9,7 +9,7 @@ package boring
 import (
 	"crypto"
 	"crypto/cipher"
-	"crypto/internal/boring/sig"
+	"github.com/huamang/tls/boring/sig"
 	"hash"
 )
 
